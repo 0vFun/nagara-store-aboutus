@@ -1,544 +1,814 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
+  <meta name="description"
+    content="Toko bahan bangunan lengkap di Nagara. Jual semen, cat, besi, pasir, dan perlengkapan bangunan lainnya.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tentang Kami | Toko Bahan Bangunan Nagara</title>
-
-  <meta name="theme-color" content="#ff6600">
-
-  <link rel="manifest" href="manifest.json">
+  <title>Nagara Store</title>
 
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
+
 <body>
 
-    <!-- CINEMATIC LOADING INTRO -->
-<div id="introLoader">
-
-  <div class="intro-content">
-    <img src="assets/HMR.png" alt="Logo" class="intro-logo">
-
-    <h1 class="typing-text">NAGARA STORE</h1>
-
+  <!-- STORE STATUS FLOAT -->
+  <div id="storeStatusMini" class="store-status-mini open">
+    <span class="dot"></span>
+    <span id="storeStatusTextMini">Open</span>
   </div>
 
-</div>
+  <!-- LOADING ANIMATION -->
 
-<!-- HEADER -->
-
-<header class="topbar">
-
-  <div class="topbar-left">
-    <img src="assets/HMR.png" alt="HMR Logo">
-    <span>About Us</span>
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
   </div>
 
-  <a class="back-btn" href="https://nagara-store2.vercel.app/" target="_blank">
-    ⬅ Kembali ke Website
-  </a>
+  <!-- HEADER -->
+  <header class="header">
 
-</header>
+    <div class="logo-wrap">
+
+      <img src="assets/HMR.png" alt="HMR Logo" class="logo-img">
+
+      <div class="logo-text">
+        <h2>HMR STORE</h2>
+        <p>Toko Bahan Bangunan</p>
+      </div>
+
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Produk</a>
+      <a href="#footer">Kontak</a>
+
+      <a href="https://nagara-store-aboutus.vercel.app/" target="_blank" class="nav-about">
+        About Us
+      </a>
+    </nav>
+
+  </header>
+
+  <div id="storeStatusBar"></div>
 
   <!-- HERO -->
-<section class="cp-hero">
+  <section class="hero">
 
-  <div class="cp-overlay"></div>
+    <div class="hero-content">
 
-  <div class="cp-hero-content">
+      <h1>
+        Toko Bahan Bangunan Premium
+      </h1>
 
-    <img src="assets/HMR.png" class="cp-logo">
+      <p>
+        Material lengkap, murah, dan terpercaya.
+      </p>
 
-    <h1>Toko Bahan Bangunan Nagara</h1>
+      <button class="btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
 
-    <p>
-      Solusi material bangunan terpercaya di Kalimantan Selatan.
-      Kami membangun kualitas, bukan sekadar menjual barang.
-    </p>
+        Belanja Sekarang
 
-    <a href="#profile" class="cp-btn">Lihat Profil</a>
-
-  </div>
-
-</section>
-
-<!-- ABOUT US PREMIUM -->
-<section class="about">
-
-  <div class="about-wrap">
-
-    <img src="assets/HMR.png" class="about-logo" alt="HMR Logo">
-
-    <div class="about-badge">
-      EST. 2003 • NAGARA, KALSEL
-    </div>
-
-    <h1>
-      Membangun Kepercayaan,<br>
-      Menyediakan Material Berkualitas
-    </h1>
-
-    <p class="about-text">
-      Toko Bahan Bangunan Nagara adalah penyedia material konstruksi yang telah berdiri sejak 2003.
-      Kami berkomitmen memberikan kualitas terbaik, harga kompetitif, dan pelayanan profesional
-      untuk mendukung setiap proyek Anda — dari skala kecil hingga besar.
-    </p>
-
-    <div class="about-stats">
-
-      <div class="stat">
-        <h3>20+</h3>
-        <p>Tahun Pengalaman</p>
-      </div>
-
-      <div class="stat">
-        <h3>1000+</h3>
-        <p>Produk Tersedia</p>
-      </div>
-
-      <div class="stat">
-        <h3>24/7</h3>
-        <p>Customer Support</p>
-      </div>
+      </button>
 
     </div>
-
-    <div class="about-actions">
-
-      <a href="https://nagara-store2.vercel.app/" class="btn-primary">
-        Kembali ke Store
-      </a>
-
-      <a href="#contact" class="btn-outline">
-        Hubungi Kami
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- PROFILE -->
-<section id="profile" class="cp-section">
-
-  <h2>Profil Perusahaan</h2>
-
-  <p>
-    Toko Bahan Bangunan Nagara adalah usaha yang bergerak di bidang
-    penyediaan material bangunan lengkap, mulai dari semen, besi,
-    pasir, hingga kebutuhan proyek besar.
-  </p>
-
-  <p>
-    Kami berkomitmen memberikan harga terbaik, pelayanan cepat,
-    serta pengiriman yang aman dan tepat waktu.
-  </p>
-
-</section>
-
-<!-- TIMELINE -->
-<section class="cp-timeline">
-
-  <h2>Perjalanan Kami</h2>
-
-  <div class="timeline">
-
-    <div class="time-item">
-      <h3>2003</h3>
-      <p>Awal berdirinya toko kecil di Nagara.</p>
-    </div>
-
-    <div class="time-item">
-      <h3>2010</h3>
-      <p>Mulai melayani proyek bangunan skala besar.</p>
-    </div>
-
-    <div class="time-item">
-      <h3>2022</h3>
-      <p>Digitalisasi sistem & mulai online store.</p>
-    </div>
-
-    <div class="time-item">
-      <h3>2026</h3>
-      <p>Menjadi toko material modern & terpercaya.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- VALUE -->
-<section class="cp-value">
-
-  <h2>Nilai Kami</h2>
-
-  <div class="value-grid">
-
-    <div class="value-card">
-      ⚡ Cepat
-      <p>Respon dan pengiriman cepat</p>
-    </div>
-
-    <div class="value-card">
-      🧱 Kualitas
-      <p>Produk original & berkualitas</p>
-    </div>
-
-    <div class="value-card">
-      💰 Jujur
-      <p>Harga transparan tanpa tipu-tipu</p>
-    </div>
-
-    <div class="value-card">
-      🤝 Profesional
-      <p>Pelayanan ramah & berpengalaman</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- WHY CHOOSE US (KEUNGGULAN) -->
-
-<section class="why-us">
-
-  <h2>Kenapa Memilih Kami?</h2>
-
-  <div class="why-grid">
-
-    <div class="why-card">
-      <h3>🏗️ Pengalaman Sejak Lama</h3>
-      <p>Beroperasi sejak 2003, kami sudah menangani ribuan proyek konstruksi di Kalimantan dan sekitarnya.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>⚡ Stok Lengkap & Siap Kirim</h3>
-      <p>Semua material bangunan tersedia lengkap dan selalu diperbarui secara realtime.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>🚚 Pengiriman Cepat</h3>
-      <p>Kami bekerja sama dengan kurir lokal untuk memastikan barang sampai dengan aman dan cepat.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>💰 Harga Kompetitif</h3>
-      <p>Harga langsung dari supplier tanpa perantara, lebih hemat untuk proyek Anda.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>🧑‍💼 Layanan Profesional</h3>
-      <p>Tim kami siap membantu konsultasi kebutuhan material Anda kapan saja.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CARA PEMESANAN -->
-
-<section class="how-to-order">
-
-  <h2>Cara Pemesanan</h2>
-
-  <div class="step-grid">
-
-    <div class="step">
-      <span>1</span>
-      <h3>Pilih Produk</h3>
-      <p>Browse katalog dan pilih material yang Anda butuhkan.</p>
-    </div>
-
-    <div class="step">
-      <span>2</span>
-      <h3>Tambah ke Keranjang</h3>
-      <p>Masukkan produk ke keranjang sesuai jumlah kebutuhan.</p>
-    </div>
-
-    <div class="step">
-      <span>3</span>
-      <h3>Checkout via WhatsApp</h3>
-      <p>Klik checkout dan otomatis terhubung ke admin WhatsApp.</p>
-    </div>
-
-    <div class="step">
-      <span>4</span>
-      <h3>Konfirmasi & Pengiriman</h3>
-      <p>Admin akan konfirmasi pesanan dan mengatur pengiriman.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CTA -->
-<section class="cp-cta">
-
-  <h2>Siap Bangun Proyek Anda?</h2>
-
-  <p>Kami siap menjadi partner pembangunan Anda.</p>
-
-  <a href="https://nagara-store2.vercel.app/" class="cp-btn2">
-    Kembali ke Store
-  </a>
-
-</section>
-
-  <!-- ABOUT -->
-  <section class="about-section">
-
-    <h2>Siapa Kami?</h2>
-
-    <p>
-      Kami adalah toko bahan bangunan yang
-      berlokasi di Nagara, Hulu Sungai Selatan,
-      Kalimantan Selatan.
-    </p>
-
-    <p>
-      Fokus kami adalah memberikan pelayanan cepat,
-      harga bersaing, dan produk berkualitas untuk
-      kebutuhan pembangunan rumah, toko,
-      gudang, maupun proyek besar.
-    </p>
 
   </section>
 
-  <!-- VISI MISI -->
-  <section class="vision">
+  <!-- INI YANG KAMU MAKSUD -->
+  <main class="container">
 
-    <div class="vision-box">
+    <!-- SEARCH -->
+    <section class="search-section">
+      <input type="text" id="search" placeholder="Cari produk...">
+    </section>
 
-      <h2>Visi</h2>
+    <!-- CATEGORY -->
+    <div id="categoryBar" class="category-bar"></div>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products">
+      <div id="grid" class="grid"></div>
+    </section>
+
+  </main>
+
+  <!-- MODAL, ADMIN, FOOTER tetap di bawah -->
+
+  <!-- CART MODAL -->
+
+  <div class="modal" id="modal">
+
+    <div class="modal-box">
+
+      <span class="close" onclick="toggleCart()">
+
+        ✖
+
+      </span>
+
+      <h2>Keranjang</h2>
+
+      <div id="cart"></div>
+
+      <h3 id="total">
+        Total: Rp 0
+      </h3>
+
+      <button class="btn" onclick="checkout()">
+
+        Checkout WhatsApp
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <button id="adminBtn" onclick="openAdmin()">
+
+    <i class="fas fa-user-shield"></i>
+
+  </button>
+
+  <!-- ADMIN MODAL -->
+
+  <div class="modal" id="adminModal">
+
+    <div class="modal-box admin-premium-box">
+
+      <span class="close" onclick="closeAdmin()">
+
+        ✖
+
+      </span>
+
+      <!-- LOGIN -->
+
+      <div id="adminLoginBox" class="admin-login">
+
+        <div class="admin-login-top">
+
+          <div class="admin-icon">
+
+            <i class="fas fa-shield-halved"></i>
+
+          </div>
+
+          <h2>Admin Panel</h2>
+
+          <p>
+            Login untuk mengelola produk dan dashboard toko.
+          </p>
+
+        </div>
+
+        <div class="admin-input-group">
+
+          <label>Email</label>
+
+          <input id="email" type="email" placeholder="Masukkan email">
+
+        </div>
+
+        <div class="admin-input-group">
+
+          <label>Password</label>
+
+          <input id="password" type="password" placeholder="Masukkan password">
+
+        </div>
+
+        <button class="admin-login-btn" onclick="loginAdmin()">
+
+          Login Dashboard
+
+        </button>
+
+      </div>
+
+      <!-- DASHBOARD -->
+
+      <div id="adminDashboard" style="display:none;">
+
+        <div class="admin-header">
+
+          <div>
+
+            <small>ADMIN DASHBOARD</small>
+
+            <h2>HMR STORE</h2>
+
+          </div>
+
+          <button class="logout-btn" onclick="logoutAdmin()">
+
+            Logout
+
+          </button>
+
+        </div>
+
+        <!-- STATS -->
+
+        <div class="admin-stats">
+
+          <div class="admin-stat-card">
+
+            <h3 id="totalProducts">
+              0
+            </h3>
+
+            <p>Total Produk</p>
+
+          </div>
+
+          <div class="admin-stat-card">
+
+            <h3 id="totalStock">
+              0
+            </h3>
+
+            <p>Total Stok</p>
+
+          </div>
+
+        </div>
+
+        <!-- STORE CONTROL -->
+
+        <div class="admin-form-card">
+
+          <h3>Kontrol Toko</h3>
+
+          <div class="store-toggle-wrap">
+
+            <span id="storeStatusText">
+              Toko Buka
+            </span>
+
+            <button id="storeToggleBtn" class="store-toggle-btn open" onclick="toggleStoreStatus()">
+
+              BUKA
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- FORM -->
+
+        <div class="admin-form-card">
+
+          <h3>Tambah Produk</h3>
+
+          <div class="form-grid">
+
+            <input id="productName" placeholder="Nama Produk">
+
+            <input id="productStock" type="number" placeholder="Stok">
+
+            <input id="productCategory" placeholder="Kategori">
+
+            <input id="productImage" type="file">
+
+          </div>
+
+          <button class="btn" onclick="addProduct()">
+
+            Tambah Produk
+
+          </button>
+
+        </div>
+
+        <!-- PRODUCT LIST -->
+
+        <div class="admin-form-card">
+
+          <h3>Daftar Produk</h3>
+
+          <div id="adminProducts"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- WHY US -->
+
+  <section class="why-us">
+
+    <div class="why-top">
+
+      <small>KENAPA MEMILIH KAMI</small>
+
+      <h2>
+        Solusi Material Bangunan
+        Terpercaya Untuk Anda
+      </h2>
 
       <p>
-        Menjadi toko bahan bangunan terpercaya
-        dan modern di Kalimantan Selatan.
+        HMR STORE hadir memberikan produk berkualitas,
+        harga terbaik, dan pelayanan cepat untuk kebutuhan
+        pembangunan rumah, toko, maupun proyek besar.
       </p>
 
     </div>
 
-    <div class="vision-box">
+    <div class="why-grid">
 
-      <h2>Misi</h2>
+      <!-- ITEM -->
+      <div class="why-card">
 
-      <ul>
-        <li>Menyediakan produk berkualitas</li>
-        <li>Memberikan pelayanan terbaik</li>
-        <li>Harga bersaing & transparan</li>
-        <li>Pengiriman cepat dan aman</li>
-      </ul>
+        <div class="why-icon">
+          <i class="fas fa-box-open"></i>
+        </div>
 
-    </div>
-
-  </section>
-
-  <!-- KEUNGGULAN -->
-  <section class="advantages">
-
-    <h2>Kenapa Memilih Kami?</h2>
-
-    <div class="adv-grid">
-
-      <div class="adv-card">
-        🚚
-        <h3>Pengiriman Cepat</h3>
-        <p>Siap kirim ke berbagai daerah.</p>
-      </div>
-
-      <div class="adv-card">
-        💰
-        <h3>Harga Bersaing</h3>
-        <p>Harga terbaik untuk grosir maupun retail.</p>
-      </div>
-
-      <div class="adv-card">
-        🧱
         <h3>Produk Lengkap</h3>
-        <p>Material bangunan lengkap dan berkualitas.</p>
+
+        <p>
+          Berbagai kebutuhan bahan bangunan tersedia
+          lengkap dalam satu tempat.
+        </p>
+
       </div>
 
-      <div class="adv-card">
-        ⭐
-        <h3>Pelayanan Ramah</h3>
-        <p>Admin siap membantu kebutuhan Anda.</p>
+      <!-- ITEM -->
+      <div class="why-card">
+
+        <div class="why-icon">
+          <i class="fas fa-tags"></i>
+        </div>
+
+        <h3>Harga Kompetitif</h3>
+
+        <p>
+          Harga bersaing dengan kualitas terbaik
+          untuk semua kalangan pelanggan.
+        </p>
+
+      </div>
+
+      <!-- ITEM -->
+      <div class="why-card">
+
+        <div class="why-icon">
+          <i class="fas fa-truck-fast"></i>
+        </div>
+
+        <h3>Pengiriman Cepat</h3>
+
+        <p>
+          Proses pengiriman cepat dan aman
+          langsung ke lokasi proyek Anda.
+        </p>
+
+      </div>
+
+      <!-- ITEM -->
+      <div class="why-card">
+
+        <div class="why-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+
+        <h3>Terpercaya</h3>
+
+        <p>
+          Dipercaya pelanggan dengan pelayanan
+          ramah dan produk berkualitas.
+        </p>
+
       </div>
 
     </div>
 
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <!-- BRANDS -->
 
-    <h2>Hubungi Kami</h2>
+  <section class="brands">
 
-    <p>
-      📍 Nagara, Hulu Sungai Selatan, Kalimantan Selatan
-    </p>
+    <div class="brands-top">
+      <small>BRAND PARTNER</small>
+      <h2>Merek Tersedia</h2>
+      <p>
+        Kami bekerja sama dengan brand material bangunan terpercaya
+        untuk memastikan kualitas terbaik.
+      </p>
+    </div>
 
-    <p>
-      📞 +62 823-1730-4798
-    </p>
+    <div class="brands-grid">
 
-    <a
-    href="https://wa.me/6282317304798"
-    class="contact-btn">
-      Chat WhatsApp
-    </a>
+      <div class="brand-card">
+        <img src="assets/avianbrands.png" alt="Avian Brands">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/dulux.png" alt="Dulux">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/gat.png" alt="GAT">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/gresik.png" alt="Semen Gresik">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/makita.png" alt="Makita">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/maspion.png" alt="Maspion">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/ngk.png" alt="NGK">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/nippon.png" alt="Nippon Paint">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/rucika.png" alt="Rucika">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/taso.png" alt="Taso">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/tekiro.png" alt="Tekiro">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/toho.png" alt="Toho">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/wipro.png" alt="Wipro">
+      </div>
+
+      <div class="brand-card">
+        <img src="assets/yuasa.png" alt="Yuasa">
+      </div>
+
+    </div>
 
   </section>
 
-  <!-- STATS -->
-<section class="stats">
+  <!-- RETURN POLICY -->
 
-  <h2>Pencapaian Kami</h2>
+  <section class="policy-section">
 
-  <div class="stats-grid">
+    <div class="policy-box">
 
-    <div class="stats-card">
-      <h3>5000+</h3>
-      <p>Pelanggan Dilayani</p>
+      <div class="policy-icon">
+
+        <i class="fas fa-circle-info"></i>
+
+      </div>
+
+      <div class="policy-content">
+
+        <h2>
+          Kebijakan Return & Komplain
+        </h2>
+
+        <p>
+
+          Jika terdapat kendala pada produk,
+          kesalahan pesanan, atau barang mengalami
+          kerusakan, silakan segera konsultasikan
+          kepada admin kami untuk proses bantuan,
+          komplain, maupun return produk.
+
+        </p>
+
+        <a href="https://wa.me/6282317304798" target="_blank" class="policy-btn">
+
+          Hubungi Admin
+
+        </a>
+
+      </div>
+
     </div>
 
-    <div class="stats-card">
-      <h3>1000+</h3>
-      <p>Produk Material</p>
-    </div>
+  </section>
 
-    <div class="stats-card">
-      <h3>20+</h3>
-      <p>Tahun Pengalaman</p>
-    </div>
+  <!-- CTA WHATSAPP -->
 
-    <div class="stats-card">
-      <h3>24/7</h3>
-      <p>Respon Admin</p>
-    </div>
+  <section class="cta-wa">
 
-  </div>
+    <div class="cta-box">
 
-</section>
+      <h2>
+        Butuh Bantuan Memilih Material?
+      </h2>
 
-<!-- SERVICES -->
-<section class="services">
-
-  <h2>Layanan Kami</h2>
-
-  <div class="services-grid">
-
-    <div class="service-card">
-      🧱
-      <h3>Material Bangunan</h3>
       <p>
-        Menyediakan berbagai kebutuhan material
-        bangunan lengkap dan berkualitas.
+        Konsultasikan langsung dengan admin kami via WhatsApp.
+        Respon cepat & siap bantu kebutuhan proyek Anda.
       </p>
-    </div>
 
-    <div class="service-card">
-      🚚
-      <h3>Pengiriman</h3>
-      <p>
-        Siap antar barang langsung ke lokasi
-        proyek maupun rumah pelanggan.
-      </p>
-    </div>
+      <a href="https://wa.me/6282317304798" target="_blank" class="cta-btn">
 
-    <div class="service-card">
-      💬
-      <h3>Konsultasi</h3>
-      <p>
-        Membantu pelanggan memilih material
-        terbaik sesuai kebutuhan pembangunan.
-      </p>
-    </div>
+        💬 Chat WhatsApp Sekarang
 
-    <div class="service-card">
-      🏗️
-      <h3>Supply Proyek</h3>
-      <p>
-        Melayani kebutuhan proyek kecil hingga
-        proyek pembangunan besar.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- WHY TRUST -->
-<section class="trust">
-
-  <div class="trust-content">
-
-    <h2>Kenapa Banyak Pelanggan Percaya?</h2>
-
-    <p>
-      Kami mengutamakan kualitas produk,
-      pelayanan cepat, serta harga yang transparan.
-      Kepuasan pelanggan menjadi prioritas utama kami.
-    </p>
-
-    <div class="trust-list">
-
-      <div>✔ Produk Berkualitas</div>
-      <div>✔ Harga Transparan</div>
-      <div>✔ Pelayanan Ramah</div>
-      <div>✔ Pengiriman Cepat</div>
+      </a>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <!-- FAQ -->
 
-  <!-- ELITE FOOTER -->
-<footer class="footer-elite">
+  <section class="faq">
 
-  <div class="footer-container">
+    <h2>Pertanyaan yang Sering Diajukan</h2>
 
-    <div class="footer-brand">
-      <img src="assets/LOGO4721.png" class="footer-logo" alt="Logo">
-
-      <div>
-        <h3>Toko Bahan Bangunan Nagara</h3>
-        <p>Est. 2003 • Kalimantan Selatan</p>
+    <div class="faq-item">
+      <button class="faq-question">Apakah bisa kirim ke luar kota?</button>
+      <div class="faq-answer">
+        <p>Ya, kami melayani pengiriman ke berbagai daerah sesuai ongkir ekspedisi.</p>
       </div>
     </div>
 
-    <div class="footer-divider"></div>
-
-    <p class="footer-desc">
-      Penyedia material konstruksi terpercaya dengan fokus pada kualitas,
-      kecepatan layanan, dan pengalaman pelanggan terbaik.
-    </p>
-
-    <div class="footer-credit">
-      <span>Crafted by</span>
-      <strong>Faadhil Digital</strong>
+    <div class="faq-item">
+      <button class="faq-question">Apakah bisa pembelian grosir?</button>
+      <div class="faq-answer">
+        <p>Bisa, kami menyediakan harga khusus untuk pembelian dalam jumlah besar.</p>
+      </div>
     </div>
 
-    <p class="footer-copy">
-      © 2026 All rights reserved
-    </p>
+    <div class="faq-item">
+      <button class="faq-question">Apakah stok selalu update?</button>
+      <div class="faq-answer">
+        <p>Ya, stok dikelola langsung melalui admin panel secara realtime.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Apakah bisa konsultasi dulu?</button>
+      <div class="faq-answer">
+        <p>Tentu, silakan hubungi admin melalui WhatsApp.</p>
+      </div>
+    </div>
+
+    <!-- 🔥 TAMBAHAN HARUS DI SINI -->
+    <div class="faq-item">
+      <button class="faq-question">Apakah harga bisa berubah sewaktu-waktu?</button>
+      <div class="faq-answer">
+        <p>Ya, harga bisa berubah tergantung supplier dan stok pasar.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Apakah ada minimal order?</button>
+      <div class="faq-answer">
+        <p>Tidak ada minimal order untuk pembelian biasa.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-container">
+
+      <!-- LEFT -->
+      <div class="footer-brand">
+
+        <div class="footer-logo">
+
+          <img src="assets/HMR.png" alt="HMR Logo">
+
+          <div>
+
+            <h2>HMR STORE</h2>
+
+            <p>
+              Toko Bahan Bangunan Premium
+            </p>
+
+          </div>
+
+        </div>
+
+        <p class="footer-desc">
+
+          Menyediakan berbagai kebutuhan material bangunan
+          berkualitas dengan harga terbaik dan pelayanan terpercaya.
+
+        </p>
+
+      </div>
+
+      <!-- CENTER -->
+      <div class="footer-links">
+
+        <h3>Navigasi</h3>
+
+        <a href="#">Home</a>
+        <a href="#products">Produk</a>
+        <a href="#footer">Kontak</a>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="footer-social">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6282317304798" target="_blank">
+
+          <i class="fab fa-whatsapp"></i>
+
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/" target="_blank">
+
+          <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://facebook.com/" target="_blank">
+
+          <i class="fab fa-facebook"></i>
+
+        </a>
+
+        <!-- Shopee -->
+        <a href="https://s.shopee.co.id/gNAzWZaoH?share_channel_code=1" target="_blank">
+
+          <i class="fas fa-bag-shopping"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 HMR STORE — All Rights Reserved
+      </p>
+
+      <div class="footer-credit">
+
+        <img src="assets/LOGO4721.png" alt="Faadhil Digital">
+
+        <span>
+          Website by Faadhil Digital
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- EDIT MODAL -->
+
+  <div class="modal" id="editModal">
+
+    <div class="modal-box">
+
+      <span class="close" onclick="closeEditModal()">
+        ✖
+      </span>
+
+      <h2>Edit Produk</h2>
+
+      <div class="edit-form">
+
+        <input id="editName" placeholder="Nama Produk">
+
+        <input id="editStock" type="number" placeholder="Stok">
+
+        <input id="editCategory" placeholder="Kategori">
+
+        <input id="editImage" type="file">
+
+      </div>
+
+      <button class="btn" onclick="saveEditProduct()">
+
+        Simpan Perubahan
+
+      </button>
+
+    </div>
 
   </div>
 
-</footer>
+  <!-- PRODUCT DETAIL MODAL -->
 
-  <!-- FLOATING WA -->
-  <a
-  href="https://wa.me/6282317304798"
-  class="wa-float">
-    💬
-  </a>
+  <div class="modal" id="productModal">
 
-  <script src="js/script.js"></script>
+    <div class="modal-box product-modal-box">
+
+      <span class="close" onclick="closeProductModal()">
+
+        ✖
+
+      </span>
+
+      <div class="product-detail">
+
+        <div class="product-detail-image">
+
+          <img id="detailImage" src="" alt="">
+
+        </div>
+
+        <div class="product-detail-info">
+
+          <span id="detailCategory" class="detail-category">
+          </span>
+
+          <h2 id="detailName"></h2>
+
+          <p id="detailPrice" class="detail-price">
+          </p>
+
+          <p id="detailStock" class="detail-stock">
+          </p>
+
+          <p class="detail-desc">
+
+            Produk berkualitas tinggi dengan
+            material terbaik dan cocok untuk
+            berbagai kebutuhan pembangunan.
+
+          </p>
+
+          <button class="btn detail-btn" id="detailBtn">
+
+            Tanya Harga
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ADMIN LOADING -->
+
+  <div id="adminLoader" class="admin-loader">
+
+    <div class="admin-loader-box">
+
+      <div class="admin-loader-logo">
+
+        <i class="fas fa-shield-halved"></i>
+
+      </div>
+
+      <h2>Memuat Dashboard</h2>
+
+      <p>
+        Menyiapkan panel admin...
+      </p>
+
+      <div class="admin-loader-bar">
+
+        <div class="admin-loader-progress"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="js/script.js"></script>
 
 </body>
+
 </html>

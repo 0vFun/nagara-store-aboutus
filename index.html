@@ -1,544 +1,569 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Tentang Kami | Toko Bahan Bangunan Nagara</title>
-
-  <meta name="theme-color" content="#ff6600">
-
-  <link rel="manifest" href="manifest.json">
-
-  <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="description" content="Tentang HMR Store — Toko bahan bangunan terpercaya di Nagara, Kalimantan Selatan sejak 2003." />
+  <title>Tentang Kami — HMR Store</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
 
-    <!-- CINEMATIC LOADING INTRO -->
-<div id="introLoader">
-
-  <div class="intro-content">
-    <img src="assets/HMR.png" alt="Logo" class="intro-logo">
-
-    <h1 class="typing-text">NAGARA STORE</h1>
-
+  <!-- ═══ CINEMATIC LOADER ═══ -->
+  <div id="introLoader" class="intro-loader">
+    <div class="il-inner">
+      <div class="il-ring"></div>
+      <img src="assets/HMR.png" alt="HMR" class="il-logo" />
+    </div>
+    <div class="il-text">
+      <span class="il-name">HMR STORE</span>
+      <span class="il-sub">Est. 2003 · Nagara, Kalimantan Selatan</span>
+    </div>
   </div>
 
-</div>
-
-<!-- HEADER -->
-
-<header class="topbar">
-
-  <div class="topbar-left">
-    <img src="assets/HMR.png" alt="HMR Logo">
-    <span>About Us</span>
-  </div>
-
-  <a class="back-btn" href="https://nagara-store2.vercel.app/" target="_blank">
-    ⬅ Kembali ke Website
+  <!-- ═══ FLOATING WA ═══ -->
+  <a href="https://wa.me/6282317304798?text=Halo%20admin%20HMR%20Store%2C%20saya%20ingin%20konsultasi" target="_blank" class="wa-fab" aria-label="WhatsApp">
+    <div class="wa-pulse"></div>
+    <i class="fab fa-whatsapp"></i>
   </a>
 
-</header>
-
-  <!-- HERO -->
-<section class="cp-hero">
-
-  <div class="cp-overlay"></div>
-
-  <div class="cp-hero-content">
-
-    <img src="assets/HMR.png" class="cp-logo">
-
-    <h1>Toko Bahan Bangunan Nagara</h1>
-
-    <p>
-      Solusi material bangunan terpercaya di Kalimantan Selatan.
-      Kami membangun kualitas, bukan sekadar menjual barang.
-    </p>
-
-    <a href="#profile" class="cp-btn">Lihat Profil</a>
-
-  </div>
-
-</section>
-
-<!-- ABOUT US PREMIUM -->
-<section class="about">
-
-  <div class="about-wrap">
-
-    <img src="assets/HMR.png" class="about-logo" alt="HMR Logo">
-
-    <div class="about-badge">
-      EST. 2003 • NAGARA, KALSEL
-    </div>
-
-    <h1>
-      Membangun Kepercayaan,<br>
-      Menyediakan Material Berkualitas
-    </h1>
-
-    <p class="about-text">
-      Toko Bahan Bangunan Nagara adalah penyedia material konstruksi yang telah berdiri sejak 2003.
-      Kami berkomitmen memberikan kualitas terbaik, harga kompetitif, dan pelayanan profesional
-      untuk mendukung setiap proyek Anda — dari skala kecil hingga besar.
-    </p>
-
-    <div class="about-stats">
-
-      <div class="stat">
-        <h3>20+</h3>
-        <p>Tahun Pengalaman</p>
+  <!-- ═══ TOPBAR ═══ -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <div class="tb-brand">
+        <img src="assets/HMR.png" alt="HMR" class="tb-logo" />
+        <div class="tb-text">
+          <span class="tb-name">HMR <em>STORE</em></span>
+          <span class="tb-sub">About Us</span>
+        </div>
       </div>
-
-      <div class="stat">
-        <h3>1000+</h3>
-        <p>Produk Tersedia</p>
-      </div>
-
-      <div class="stat">
-        <h3>24/7</h3>
-        <p>Customer Support</p>
-      </div>
-
-    </div>
-
-    <div class="about-actions">
-
-      <a href="https://nagara-store2.vercel.app/" class="btn-primary">
-        Kembali ke Store
+      <nav class="tb-nav" id="tbNav">
+        <a href="#tentang" class="tb-link">Tentang</a>
+        <a href="#milestone" class="tb-link">Perjalanan</a>
+        <a href="#nilai" class="tb-link">Nilai</a>
+        <a href="#layanan" class="tb-link">Layanan</a>
+        <a href="#kontak" class="tb-link">Kontak</a>
+      </nav>
+      <a href="https://nagara-store2.vercel.app/" target="_blank" class="tb-back">
+        <i class="fas fa-store"></i> Ke Store
       </a>
-
-      <a href="#contact" class="btn-outline">
-        Hubungi Kami
-      </a>
-
+      <button class="tb-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
 
-  </div>
-
-</section>
-
-<!-- PROFILE -->
-<section id="profile" class="cp-section">
-
-  <h2>Profil Perusahaan</h2>
-
-  <p>
-    Toko Bahan Bangunan Nagara adalah usaha yang bergerak di bidang
-    penyediaan material bangunan lengkap, mulai dari semen, besi,
-    pasir, hingga kebutuhan proyek besar.
-  </p>
-
-  <p>
-    Kami berkomitmen memberikan harga terbaik, pelayanan cepat,
-    serta pengiriman yang aman dan tepat waktu.
-  </p>
-
-</section>
-
-<!-- TIMELINE -->
-<section class="cp-timeline">
-
-  <h2>Perjalanan Kami</h2>
-
-  <div class="timeline">
-
-    <div class="time-item">
-      <h3>2003</h3>
-      <p>Awal berdirinya toko kecil di Nagara.</p>
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mobMenu">
+    <div class="mob-head">
+      <img src="assets/HMR.png" alt="HMR" class="mob-logo" />
+      <button class="mob-x" onclick="closeMob()"><i class="fas fa-times"></i></button>
     </div>
-
-    <div class="time-item">
-      <h3>2010</h3>
-      <p>Mulai melayani proyek bangunan skala besar.</p>
-    </div>
-
-    <div class="time-item">
-      <h3>2022</h3>
-      <p>Digitalisasi sistem & mulai online store.</p>
-    </div>
-
-    <div class="time-item">
-      <h3>2026</h3>
-      <p>Menjadi toko material modern & terpercaya.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- VALUE -->
-<section class="cp-value">
-
-  <h2>Nilai Kami</h2>
-
-  <div class="value-grid">
-
-    <div class="value-card">
-      ⚡ Cepat
-      <p>Respon dan pengiriman cepat</p>
-    </div>
-
-    <div class="value-card">
-      🧱 Kualitas
-      <p>Produk original & berkualitas</p>
-    </div>
-
-    <div class="value-card">
-      💰 Jujur
-      <p>Harga transparan tanpa tipu-tipu</p>
-    </div>
-
-    <div class="value-card">
-      🤝 Profesional
-      <p>Pelayanan ramah & berpengalaman</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- WHY CHOOSE US (KEUNGGULAN) -->
-
-<section class="why-us">
-
-  <h2>Kenapa Memilih Kami?</h2>
-
-  <div class="why-grid">
-
-    <div class="why-card">
-      <h3>🏗️ Pengalaman Sejak Lama</h3>
-      <p>Beroperasi sejak 2003, kami sudah menangani ribuan proyek konstruksi di Kalimantan dan sekitarnya.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>⚡ Stok Lengkap & Siap Kirim</h3>
-      <p>Semua material bangunan tersedia lengkap dan selalu diperbarui secara realtime.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>🚚 Pengiriman Cepat</h3>
-      <p>Kami bekerja sama dengan kurir lokal untuk memastikan barang sampai dengan aman dan cepat.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>💰 Harga Kompetitif</h3>
-      <p>Harga langsung dari supplier tanpa perantara, lebih hemat untuk proyek Anda.</p>
-    </div>
-
-    <div class="why-card">
-      <h3>🧑‍💼 Layanan Profesional</h3>
-      <p>Tim kami siap membantu konsultasi kebutuhan material Anda kapan saja.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CARA PEMESANAN -->
-
-<section class="how-to-order">
-
-  <h2>Cara Pemesanan</h2>
-
-  <div class="step-grid">
-
-    <div class="step">
-      <span>1</span>
-      <h3>Pilih Produk</h3>
-      <p>Browse katalog dan pilih material yang Anda butuhkan.</p>
-    </div>
-
-    <div class="step">
-      <span>2</span>
-      <h3>Tambah ke Keranjang</h3>
-      <p>Masukkan produk ke keranjang sesuai jumlah kebutuhan.</p>
-    </div>
-
-    <div class="step">
-      <span>3</span>
-      <h3>Checkout via WhatsApp</h3>
-      <p>Klik checkout dan otomatis terhubung ke admin WhatsApp.</p>
-    </div>
-
-    <div class="step">
-      <span>4</span>
-      <h3>Konfirmasi & Pengiriman</h3>
-      <p>Admin akan konfirmasi pesanan dan mengatur pengiriman.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CTA -->
-<section class="cp-cta">
-
-  <h2>Siap Bangun Proyek Anda?</h2>
-
-  <p>Kami siap menjadi partner pembangunan Anda.</p>
-
-  <a href="https://nagara-store2.vercel.app/" class="cp-btn2">
-    Kembali ke Store
-  </a>
-
-</section>
-
-  <!-- ABOUT -->
-  <section class="about-section">
-
-    <h2>Siapa Kami?</h2>
-
-    <p>
-      Kami adalah toko bahan bangunan yang
-      berlokasi di Nagara, Hulu Sungai Selatan,
-      Kalimantan Selatan.
-    </p>
-
-    <p>
-      Fokus kami adalah memberikan pelayanan cepat,
-      harga bersaing, dan produk berkualitas untuk
-      kebutuhan pembangunan rumah, toko,
-      gudang, maupun proyek besar.
-    </p>
-
-  </section>
-
-  <!-- VISI MISI -->
-  <section class="vision">
-
-    <div class="vision-box">
-
-      <h2>Visi</h2>
-
-      <p>
-        Menjadi toko bahan bangunan terpercaya
-        dan modern di Kalimantan Selatan.
-      </p>
-
-    </div>
-
-    <div class="vision-box">
-
-      <h2>Misi</h2>
-
-      <ul>
-        <li>Menyediakan produk berkualitas</li>
-        <li>Memberikan pelayanan terbaik</li>
-        <li>Harga bersaing & transparan</li>
-        <li>Pengiriman cepat dan aman</li>
-      </ul>
-
-    </div>
-
-  </section>
-
-  <!-- KEUNGGULAN -->
-  <section class="advantages">
-
-    <h2>Kenapa Memilih Kami?</h2>
-
-    <div class="adv-grid">
-
-      <div class="adv-card">
-        🚚
-        <h3>Pengiriman Cepat</h3>
-        <p>Siap kirim ke berbagai daerah.</p>
-      </div>
-
-      <div class="adv-card">
-        💰
-        <h3>Harga Bersaing</h3>
-        <p>Harga terbaik untuk grosir maupun retail.</p>
-      </div>
-
-      <div class="adv-card">
-        🧱
-        <h3>Produk Lengkap</h3>
-        <p>Material bangunan lengkap dan berkualitas.</p>
-      </div>
-
-      <div class="adv-card">
-        ⭐
-        <h3>Pelayanan Ramah</h3>
-        <p>Admin siap membantu kebutuhan Anda.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-
-    <h2>Hubungi Kami</h2>
-
-    <p>
-      📍 Nagara, Hulu Sungai Selatan, Kalimantan Selatan
-    </p>
-
-    <p>
-      📞 +62 823-1730-4798
-    </p>
-
-    <a
-    href="https://wa.me/6282317304798"
-    class="contact-btn">
-      Chat WhatsApp
+    <nav class="mob-nav">
+      <a href="#tentang" class="mob-link">Tentang</a>
+      <a href="#milestone" class="mob-link">Perjalanan</a>
+      <a href="#nilai" class="mob-link">Nilai</a>
+      <a href="#layanan" class="mob-link">Layanan</a>
+      <a href="#kontak" class="mob-link">Kontak</a>
+    </nav>
+    <a href="https://nagara-store2.vercel.app/" target="_blank" class="mob-store">
+      <i class="fas fa-store"></i> Kembali ke Store
     </a>
-
-  </section>
-
-  <!-- STATS -->
-<section class="stats">
-
-  <h2>Pencapaian Kami</h2>
-
-  <div class="stats-grid">
-
-    <div class="stats-card">
-      <h3>5000+</h3>
-      <p>Pelanggan Dilayani</p>
-    </div>
-
-    <div class="stats-card">
-      <h3>1000+</h3>
-      <p>Produk Material</p>
-    </div>
-
-    <div class="stats-card">
-      <h3>20+</h3>
-      <p>Tahun Pengalaman</p>
-    </div>
-
-    <div class="stats-card">
-      <h3>24/7</h3>
-      <p>Respon Admin</p>
-    </div>
-
   </div>
 
-</section>
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1800&q=80" alt="" class="hero-img" />
+      <div class="hero-scrim"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
 
-<!-- SERVICES -->
-<section class="services">
+    <div class="hero-body">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Est. 2003 · Nagara, Kalimantan Selatan
+      </div>
 
-  <h2>Layanan Kami</h2>
+      <h1 class="hero-h1">
+        <span class="hh-line">Membangun</span>
+        <span class="hh-line hh-stroke">Kepercayaan</span>
+        <span class="hh-line">Selama 20+ Tahun</span>
+      </h1>
 
-  <div class="services-grid">
-
-    <div class="service-card">
-      🧱
-      <h3>Material Bangunan</h3>
-      <p>
-        Menyediakan berbagai kebutuhan material
-        bangunan lengkap dan berkualitas.
+      <p class="hero-p">
+        HMR Store adalah toko bahan bangunan yang telah melayani kebutuhan konstruksi di Nagara dan sekitarnya sejak 2003 — dengan komitmen pada kualitas, kejujuran, dan pelayanan terbaik.
       </p>
-    </div>
 
-    <div class="service-card">
-      🚚
-      <h3>Pengiriman</h3>
-      <p>
-        Siap antar barang langsung ke lokasi
-        proyek maupun rumah pelanggan.
-      </p>
-    </div>
-
-    <div class="service-card">
-      💬
-      <h3>Konsultasi</h3>
-      <p>
-        Membantu pelanggan memilih material
-        terbaik sesuai kebutuhan pembangunan.
-      </p>
-    </div>
-
-    <div class="service-card">
-      🏗️
-      <h3>Supply Proyek</h3>
-      <p>
-        Melayani kebutuhan proyek kecil hingga
-        proyek pembangunan besar.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- WHY TRUST -->
-<section class="trust">
-
-  <div class="trust-content">
-
-    <h2>Kenapa Banyak Pelanggan Percaya?</h2>
-
-    <p>
-      Kami mengutamakan kualitas produk,
-      pelayanan cepat, serta harga yang transparan.
-      Kepuasan pelanggan menjadi prioritas utama kami.
-    </p>
-
-    <div class="trust-list">
-
-      <div>✔ Produk Berkualitas</div>
-      <div>✔ Harga Transparan</div>
-      <div>✔ Pelayanan Ramah</div>
-      <div>✔ Pengiriman Cepat</div>
-
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- ELITE FOOTER -->
-<footer class="footer-elite">
-
-  <div class="footer-container">
-
-    <div class="footer-brand">
-      <img src="assets/LOGO4721.png" class="footer-logo" alt="Logo">
-
-      <div>
-        <h3>Toko Bahan Bangunan Nagara</h3>
-        <p>Est. 2003 • Kalimantan Selatan</p>
+      <div class="hero-acts">
+        <a href="#tentang" class="btn-fire">
+          <i class="fas fa-arrow-down"></i> Kenali Kami
+        </a>
+        <a href="https://nagara-store2.vercel.app/" target="_blank" class="btn-ghost">
+          <i class="fas fa-store"></i> Lihat Produk
+        </a>
       </div>
     </div>
 
-    <div class="footer-divider"></div>
-
-    <p class="footer-desc">
-      Penyedia material konstruksi terpercaya dengan fokus pada kualitas,
-      kecepatan layanan, dan pengalaman pelanggan terbaik.
-    </p>
-
-    <div class="footer-credit">
-      <span>Crafted by</span>
-      <strong>Faadhil Digital</strong>
+    <!-- FLOATING STATS -->
+    <div class="hero-stats">
+      <div class="hs-item">
+        <span class="hs-num" data-target="5000">0</span>
+        <span class="hs-plus">+</span>
+        <span class="hs-label">Pelanggan</span>
+      </div>
+      <div class="hs-div"></div>
+      <div class="hs-item">
+        <span class="hs-num" data-target="1000">0</span>
+        <span class="hs-plus">+</span>
+        <span class="hs-label">Produk</span>
+      </div>
+      <div class="hs-div"></div>
+      <div class="hs-item">
+        <span class="hs-num" data-target="20">0</span>
+        <span class="hs-plus">+</span>
+        <span class="hs-label">Tahun</span>
+      </div>
+      <div class="hs-div"></div>
+      <div class="hs-item">
+        <span class="hs-text">24/7</span>
+        <span class="hs-label">Support</span>
+      </div>
     </div>
 
-    <p class="footer-copy">
-      © 2026 All rights reserved
-    </p>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="hs-bar"><div class="hs-fill"></div></div>
+    </div>
+  </section>
 
-  </div>
+  <!-- ═══ TENTANG / ABOUT ═══ -->
+  <section class="about-sec" id="tentang">
+    <div class="con">
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <div class="about-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="Toko HMR Store" class="about-img" />
+            <div class="about-img-badge">
+              <div class="aib-ring"></div>
+              <span class="aib-year">2003</span>
+              <span class="aib-label">Berdiri</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="sec-tag reveal">Tentang Kami</p>
+          <h2 class="sec-heading reveal">Siapa<br/><em>HMR Store?</em></h2>
+          <p class="about-p reveal" style="--rd:.1s">
+            Toko Bahan Bangunan HMR Store adalah penyedia material konstruksi yang telah berdiri sejak <strong>2003</strong> di Nagara, Hulu Sungai Selatan, Kalimantan Selatan. Kami hadir sebagai mitra terpercaya untuk setiap kebutuhan pembangunan Anda.
+          </p>
+          <p class="about-p reveal" style="--rd:.2s">
+            Dari proyek renovasi rumah kecil hingga konstruksi gedung besar — kami menyediakan material berkualitas dengan harga kompetitif, langsung dari distributor resmi tanpa perantara.
+          </p>
+          <p class="about-p reveal" style="--rd:.3s">
+            Dengan pengalaman lebih dari <strong>20 tahun</strong>, kami memahami kebutuhan konstruksi di Kalimantan Selatan secara mendalam — baik dari sisi material, logistik, maupun layanan purna jual.
+          </p>
+          <div class="about-tags reveal" style="--rd:.4s">
+            <span><i class="fas fa-check"></i> Produk Original</span>
+            <span><i class="fas fa-check"></i> Harga Transparan</span>
+            <span><i class="fas fa-check"></i> Stok Realtime</span>
+            <span><i class="fas fa-check"></i> Siap Antar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</footer>
+  <!-- ═══ VISI MISI ═══ -->
+  <section class="visi-sec">
+    <div class="con">
+      <div class="visi-grid">
+        <div class="visi-card reveal">
+          <div class="vc-icon"><i class="fas fa-eye"></i></div>
+          <div class="vc-num">01</div>
+          <h3>Visi</h3>
+          <p>Menjadi toko bahan bangunan paling terpercaya dan modern di Kalimantan Selatan — yang dikenal atas kualitas produk, kejujuran harga, dan pelayanan prima.</p>
+        </div>
+        <div class="visi-card reveal" style="--rd:.1s">
+          <div class="vc-icon"><i class="fas fa-bullseye"></i></div>
+          <div class="vc-num">02</div>
+          <h3>Misi</h3>
+          <ul class="misi-list">
+            <li><i class="fas fa-angle-right"></i> Menyediakan produk material berkualitas tinggi</li>
+            <li><i class="fas fa-angle-right"></i> Memberikan pelayanan cepat dan profesional</li>
+            <li><i class="fas fa-angle-right"></i> Harga bersaing dan transparan tanpa tipu-tipu</li>
+            <li><i class="fas fa-angle-right"></i> Memastikan pengiriman aman dan tepat waktu</li>
+            <li><i class="fas fa-angle-right"></i> Membangun ekosistem konstruksi yang sehat</li>
+          </ul>
+        </div>
+        <div class="visi-card reveal" style="--rd:.2s">
+          <div class="vc-icon"><i class="fas fa-gem"></i></div>
+          <div class="vc-num">03</div>
+          <h3>Komitmen</h3>
+          <p>Setiap produk yang kami jual telah melalui seleksi ketat untuk memastikan kualitas dan keaslian. Kepuasan pelanggan adalah tolak ukur keberhasilan kami setiap harinya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- FLOATING WA -->
-  <a
-  href="https://wa.me/6282317304798"
-  class="wa-float">
-    💬
-  </a>
+  <!-- ═══ MILESTONE / PERJALANAN ═══ -->
+  <section class="milestone-sec" id="milestone">
+    <div class="con">
+      <p class="sec-tag reveal">Perjalanan Kami</p>
+      <h2 class="sec-heading reveal">20+ Tahun<br/><em>Melayani Indonesia</em></h2>
+      <p class="sec-para reveal" style="--rd:.1s">Dari warung kecil menjadi toko material bangunan modern — ini adalah cerita kami.</p>
+
+      <div class="timeline">
+        <div class="tl-item tl-left reveal" style="--rd:0s">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2003</span>
+            <h3>Awal Berdiri</h3>
+            <p>Toko kecil di Nagara pertama kali membuka pintu — dengan tekad melayani kebutuhan material lokal secara jujur dan berkualitas.</p>
+          </div>
+        </div>
+        <div class="tl-item tl-right reveal" style="--rd:.1s">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2008</span>
+            <h3>Ekspansi Produk</h3>
+            <p>Memperluas katalog produk — dari semen dan pasir menjadi ribuan item material bangunan, termasuk cat, besi, pipa, dan alat listrik.</p>
+          </div>
+        </div>
+        <div class="tl-item tl-left reveal" style="--rd:.2s">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2015</span>
+            <h3>Layanan Proyek Besar</h3>
+            <p>Mulai melayani proyek konstruksi skala besar — gedung, sekolah, jembatan, dan infrastruktur publik di Kalimantan Selatan.</p>
+          </div>
+        </div>
+        <div class="tl-item tl-right reveal" style="--rd:.3s">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2022</span>
+            <h3>Digitalisasi</h3>
+            <p>Meluncurkan sistem stok digital dan online store — membawa pengalaman belanja material bangunan ke era modern.</p>
+          </div>
+        </div>
+        <div class="tl-item tl-left reveal" style="--rd:.4s">
+          <div class="tl-dot tl-dot-fire"></div>
+          <div class="tl-card tl-card-fire">
+            <span class="tl-year">2026</span>
+            <h3>HMR Store Modern</h3>
+            <p>Hadir sebagai toko material bangunan modern dengan platform digital, stok realtime, dan pelayanan WhatsApp 6 hari seminggu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NILAI KAMI ═══ -->
+  <section class="nilai-sec" id="nilai">
+    <div class="con">
+      <p class="sec-tag reveal">Nilai Kami</p>
+      <h2 class="sec-heading reveal">Prinsip yang<br/><em>Kami Pegang Teguh</em></h2>
+      <div class="nilai-grid">
+        <div class="nilai-card reveal" style="--rd:0s">
+          <div class="nc-ico"><i class="fas fa-bolt"></i></div>
+          <div class="nc-num">01</div>
+          <h3>Kecepatan</h3>
+          <p>Respon cepat, proses cepat, pengiriman cepat. Kami menghargai waktu Anda dan waktu proyek Anda.</p>
+        </div>
+        <div class="nilai-card reveal" style="--rd:.08s">
+          <div class="nc-ico"><i class="fas fa-medal"></i></div>
+          <div class="nc-num">02</div>
+          <h3>Kualitas</h3>
+          <p>Semua produk original dari distributor resmi. Tidak ada barang palsu, tidak ada kompromi soal kualitas.</p>
+        </div>
+        <div class="nilai-card reveal" style="--rd:.16s">
+          <div class="nc-ico"><i class="fas fa-scale-balanced"></i></div>
+          <div class="nc-num">03</div>
+          <h3>Kejujuran</h3>
+          <p>Harga transparan, stok real, dan informasi akurat. Kami tidak pernah menjual janji yang tidak bisa kami tepati.</p>
+        </div>
+        <div class="nilai-card reveal" style="--rd:.24s">
+          <div class="nc-ico"><i class="fas fa-handshake"></i></div>
+          <div class="nc-num">04</div>
+          <h3>Profesional</h3>
+          <p>Tim kami terlatih dan berpengalaman dalam memberikan konsultasi material yang tepat untuk setiap kebutuhan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CARA PEMESANAN ═══ -->
+  <section class="cara-sec">
+    <div class="con">
+      <p class="sec-tag reveal">Cara Belanja</p>
+      <h2 class="sec-heading reveal">Mudah &amp; <em>Cepat</em></h2>
+      <p class="sec-para reveal" style="--rd:.1s">Hanya 4 langkah untuk mendapatkan material bangunan yang Anda butuhkan.</p>
+      <div class="cara-grid">
+        <div class="cara-step reveal" style="--rd:0s">
+          <div class="cs-num">01</div>
+          <div class="cs-icon"><i class="fas fa-boxes-stacked"></i></div>
+          <h3>Pilih Produk</h3>
+          <p>Browse katalog online kami. Semua stok terupdate secara realtime dari Firebase.</p>
+        </div>
+        <div class="cara-arrow reveal" style="--rd:.05s"><i class="fas fa-arrow-right"></i></div>
+        <div class="cara-step reveal" style="--rd:.1s">
+          <div class="cs-num">02</div>
+          <div class="cs-icon"><i class="fas fa-shopping-basket"></i></div>
+          <h3>Tambah Keranjang</h3>
+          <p>Masukkan ke keranjang sesuai kebutuhan. Bisa pilih banyak produk sekaligus.</p>
+        </div>
+        <div class="cara-arrow reveal" style="--rd:.15s"><i class="fas fa-arrow-right"></i></div>
+        <div class="cara-step reveal" style="--rd:.2s">
+          <div class="cs-num">03</div>
+          <div class="cs-icon"><i class="fab fa-whatsapp"></i></div>
+          <h3>Checkout WhatsApp</h3>
+          <p>Klik checkout dan otomatis terhubung ke admin kami via WhatsApp dengan detail pesanan.</p>
+        </div>
+        <div class="cara-arrow reveal" style="--rd:.25s"><i class="fas fa-arrow-right"></i></div>
+        <div class="cara-step reveal" style="--rd:.3s">
+          <div class="cs-num">04</div>
+          <div class="cs-icon"><i class="fas fa-truck-fast"></i></div>
+          <h3>Konfirmasi & Kirim</h3>
+          <p>Admin konfirmasi pesanan dan atur jadwal pengiriman sesuai lokasi Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LAYANAN ═══ -->
+  <section class="layanan-sec" id="layanan">
+    <div class="con">
+      <p class="sec-tag reveal">Layanan Kami</p>
+      <h2 class="sec-heading reveal">Apa yang<br/><em>Kami Tawarkan</em></h2>
+      <div class="layanan-grid">
+        <div class="layanan-card reveal" style="--rd:0s">
+          <div class="lc-ico"><i class="fas fa-layer-group"></i></div>
+          <h3>Material Lengkap</h3>
+          <p>Semen, besi, pasir, cat, pipa, keramik, alat listrik, dan ribuan produk bangunan lainnya — semua tersedia dalam satu toko.</p>
+          <div class="lc-tags"><span>Semen</span><span>Cat</span><span>Besi</span><span>Pipa</span></div>
+        </div>
+        <div class="layanan-card reveal" style="--rd:.08s">
+          <div class="lc-ico"><i class="fas fa-truck-fast"></i></div>
+          <h3>Pengiriman</h3>
+          <p>Layanan antar langsung ke lokasi proyek atau rumah Anda. Kami bekerja sama dengan kurir lokal terpercaya.</p>
+          <div class="lc-tags"><span>Lokal</span><span>Luar Kota</span><span>Aman</span></div>
+        </div>
+        <div class="layanan-card reveal" style="--rd:.16s">
+          <div class="lc-ico"><i class="fas fa-comments"></i></div>
+          <h3>Konsultasi Material</h3>
+          <p>Tidak yakin material apa yang dibutuhkan? Tim kami siap membantu memilih material yang paling tepat dan efisien.</p>
+          <div class="lc-tags"><span>Gratis</span><span>WhatsApp</span><span>Cepat</span></div>
+        </div>
+        <div class="layanan-card reveal" style="--rd:.24s">
+          <div class="lc-ico"><i class="fas fa-building"></i></div>
+          <h3>Supply Proyek</h3>
+          <p>Melayani kebutuhan proyek kecil hingga besar — rumah, ruko, gedung, jalan, dan infrastruktur publik lainnya.</p>
+          <div class="lc-tags"><span>Grosir</span><span>Proyek Besar</span></div>
+        </div>
+        <div class="layanan-card reveal" style="--rd:.32s">
+          <div class="lc-ico"><i class="fas fa-rotate-left"></i></div>
+          <h3>Return & Komplain</h3>
+          <p>Ada masalah dengan produk? Kami tangani setiap komplain dengan cepat dan solusi yang adil untuk semua pihak.</p>
+          <div class="lc-tags"><span>Fair</span><span>Cepat</span></div>
+        </div>
+        <div class="layanan-card reveal" style="--rd:.40s">
+          <div class="lc-ico"><i class="fas fa-tags"></i></div>
+          <h3>Harga Grosir</h3>
+          <p>Pembelian dalam jumlah besar mendapatkan harga spesial. Hubungi admin untuk penawaran grosir terbaik.</p>
+          <div class="lc-tags"><span>Negosiasi</span><span>Fleksibel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY TRUST / KEUNGGULAN ═══ -->
+  <section class="trust-sec">
+    <div class="con">
+      <div class="trust-inner">
+        <div class="trust-text">
+          <p class="sec-tag reveal">Kenapa Percaya Kami?</p>
+          <h2 class="sec-heading reveal">Bukan Sekadar<br/><em>Toko Biasa</em></h2>
+          <p class="sec-para reveal" style="--rd:.1s">Selama 20+ tahun, kepercayaan pelanggan adalah aset terbesar kami. Ini yang membedakan kami.</p>
+          <div class="trust-list">
+            <div class="trust-item reveal" style="--rd:.15s">
+              <div class="ti-ico"><i class="fas fa-certificate"></i></div>
+              <div class="ti-text">
+                <h4>Produk 100% Original</h4>
+                <p>Semua produk bersumber dari distributor resmi. Tidak ada barang imitasi atau kualitas rendah.</p>
+              </div>
+            </div>
+            <div class="trust-item reveal" style="--rd:.22s">
+              <div class="ti-ico"><i class="fas fa-chart-line"></i></div>
+              <div class="ti-text">
+                <h4>Stok Update Realtime</h4>
+                <p>Stok dikelola via Firebase — apa yang Anda lihat online, itulah yang tersedia di toko kami.</p>
+              </div>
+            </div>
+            <div class="trust-item reveal" style="--rd:.29s">
+              <div class="ti-ico"><i class="fas fa-headset"></i></div>
+              <div class="ti-text">
+                <h4>Admin Responsif</h4>
+                <p>Tim kami siap merespons pertanyaan dan pesanan 6 hari seminggu via WhatsApp.</p>
+              </div>
+            </div>
+            <div class="trust-item reveal" style="--rd:.36s">
+              <div class="ti-ico"><i class="fas fa-hand-holding-heart"></i></div>
+              <div class="ti-text">
+                <h4>Pelanggan Setia 20+ Tahun</h4>
+                <p>Lebih dari 5.000 pelanggan aktif mempercayakan kebutuhan materialnya kepada kami sejak 2003.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trust-visual reveal" style="--rd:.2s">
+          <div class="tv-wrap">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80" alt="Terpercaya" class="tv-img" />
+            <div class="tv-badge tv-badge-1">
+              <i class="fas fa-star"></i>
+              <span>Terpercaya Sejak 2003</span>
+            </div>
+            <div class="tv-badge tv-badge-2">
+              <span class="tvb-num">5K+</span>
+              <span class="tvb-label">Pelanggan Aktif</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LOKASI ═══ -->
+  <section class="lokasi-sec">
+    <div class="con">
+      <p class="sec-tag reveal">Lokasi</p>
+      <h2 class="sec-heading reveal">Temukan<br/><em>Kami di Sini</em></h2>
+      <div class="lokasi-grid">
+        <div class="lokasi-info reveal">
+          <div class="li-item">
+            <div class="li-ico"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Alamat</h4>
+              <p>Nagara, Hulu Sungai Selatan,<br/>Kalimantan Selatan</p>
+            </div>
+          </div>
+          <div class="li-item">
+            <div class="li-ico"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Telepon / WhatsApp</h4>
+              <p>+62 823-1730-4798</p>
+            </div>
+          </div>
+          <div class="li-item">
+            <div class="li-ico"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Jam Operasional</h4>
+              <p>Senin – Sabtu: 08.00 – 17.00 WITA<br/>Minggu: Tutup</p>
+            </div>
+          </div>
+          <a href="https://wa.me/6282317304798?text=Halo%20admin%2C%20saya%20ingin%20tanya%20arah%20ke%20toko" target="_blank" class="btn-fire">
+            <i class="fab fa-whatsapp"></i> Chat untuk Arah
+          </a>
+        </div>
+        <div class="lokasi-map reveal" style="--rd:.15s">
+          <div class="map-placeholder">
+            <div class="mp-inner">
+              <i class="fas fa-map-marker-alt mp-icon"></i>
+              <h3>HMR Store</h3>
+              <p>Nagara, Hulu Sungai Selatan<br/>Kalimantan Selatan</p>
+              <a href="https://maps.google.com/?q=Nagara,Hulu+Sungai+Selatan,Kalimantan+Selatan" target="_blank" class="mp-btn">
+                <i class="fas fa-directions"></i> Buka Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ KONTAK / CTA ═══ -->
+  <section class="cta-sec" id="kontak">
+    <div class="con">
+      <div class="cta-box reveal">
+        <div class="cta-glow"></div>
+        <div class="cta-inner">
+          <p class="sec-tag light">Hubungi Kami</p>
+          <h2>Siap Mulai Proyek<br/><em>Anda Bersama Kami?</em></h2>
+          <p>Konsultasi gratis, tanpa biaya apapun. Admin kami siap membantu 6 hari seminggu.</p>
+          <div class="cta-acts">
+            <a href="https://wa.me/6282317304798?text=Halo%20HMR%20Store%2C%20saya%20ingin%20konsultasi%20material" target="_blank" class="btn-wa-big">
+              <i class="fab fa-whatsapp"></i> Chat WhatsApp Sekarang
+            </a>
+            <a href="https://nagara-store2.vercel.app/" target="_blank" class="btn-ghost">
+              <i class="fas fa-store"></i> Kunjungi Store
+            </a>
+          </div>
+          <div class="cta-note-row">
+            <span><i class="fas fa-check"></i> Respon cepat</span>
+            <span><i class="fas fa-check"></i> Konsultasi gratis</span>
+            <span><i class="fas fa-check"></i> Tidak ada tekanan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="con footer-grid">
+        <div class="fg-brand">
+          <div class="fg-logo">
+            <img src="assets/HMR.png" alt="HMR" />
+            <div>
+              <div class="fg-name">HMR <em>STORE</em></div>
+              <div class="fg-tag">Est. 2003 · Nagara, Kalimantan Selatan</div>
+            </div>
+          </div>
+          <p class="fg-desc">Toko bahan bangunan terpercaya yang melayani kebutuhan konstruksi di Nagara dan sekitarnya dengan kualitas terjamin dan harga kompetitif.</p>
+          <div class="fg-socials">
+            <a href="https://wa.me/6282317304798" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://s.shopee.co.id/gNAzWZaoH" target="_blank" aria-label="Shopee"><i class="fas fa-bag-shopping"></i></a>
+          </div>
+        </div>
+        <div class="fg-nav">
+          <div class="fg-col-t">Navigasi</div>
+          <a href="#tentang">Tentang</a>
+          <a href="#milestone">Perjalanan</a>
+          <a href="#nilai">Nilai Kami</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#kontak">Kontak</a>
+          <a href="https://nagara-store2.vercel.app/" target="_blank">← Ke Store</a>
+        </div>
+        <div class="fg-contact">
+          <div class="fg-col-t">Kontak</div>
+          <p><i class="fas fa-map-marker-alt"></i> Nagara, Hulu Sungai Selatan</p>
+          <p><i class="fas fa-phone"></i> +62 823-1730-4798</p>
+          <p><i class="fas fa-clock"></i> Senin–Sabtu 08.00–17.00</p>
+          <a href="https://wa.me/6282317304798" target="_blank" class="fg-wa">
+            <i class="fab fa-whatsapp"></i> Chat Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="con fb-inner">
+        <span>© 2026 HMR Store — All Rights Reserved</span>
+        <a href="https://nagara-store2.vercel.app/" class="fb-credit">
+          <img src="assets/LOGO4721.png" alt="Faadhil Digital" />
+          <span>Website by <strong>Faadhil Digital</strong></span>
+        </a>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
-
 </body>
 </html>
